@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\objects\glcd_spi_lpc1700.o"
+".\objects\led.o"
+".\objects\kbd.o"
+".\objects\main.o"
+".\objects\usbcore.o"
+".\objects\usbdesc.o"
+".\objects\usbdmain.o"
+".\objects\usbhw.o"
+".\objects\usbuser.o"
+".\objects\adcuser.o"
+".\objects\flower.o"
+".\objects\landscape.o"
+".\objects\photoviewer.o"
+"..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM3.lib"
+".\objects\rtx_conf_cm.o"
+".\objects\eventrecorder.o"
+".\objects\gpio_lpc17xx.o"
+".\objects\pin_lpc17xx.o"
+".\objects\startup_lpc17xx.o"
+".\objects\system_lpc17xx.o"
+--library_type=microlib --strict --scatter ".\Objects\lab3a_demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\lab3a_demo.map" -o .\Objects\lab3a_demo.axf
