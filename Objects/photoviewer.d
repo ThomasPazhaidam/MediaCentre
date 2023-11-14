@@ -7,5 +7,8 @@
 .\objects\photoviewer.o: .\RTE\_Target_1\RTE_Components.h
 .\objects\photoviewer.o: GLCD.h
 .\objects\photoviewer.o: KBD.h
-.\objects\photoviewer.o: .\Images\flower.c
-.\objects\photoviewer.o: .\Images\landscape.c
+.\objects\photoviewer.o: .\Images\giorno.c
+.\objects\photoviewer.o: .\Images\anos.c
+.\objects\photoviewer.o: .\Images\goku.c
+.\objects\photoviewer.o: .\Images\kaido.c
+.\objects\photoviewer.o: .\Images\saitama.c

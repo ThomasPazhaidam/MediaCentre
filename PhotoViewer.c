@@ -16,9 +16,11 @@
 #include "RTE_Components.h"            		 // Component selection
 #include "GLCD.h"      
 #include "KBD.h"
-
-#include "flower.c"
-#include "landscape.c"
+#include "giorno.c"
+#include "anos.c"
+#include "goku.c"
+#include "kaido.c"
+#include "saitama.c"
 /******************************************************************************
 * Module Preprocessor Constants
 *******************************************************************************/
@@ -41,7 +43,7 @@
 /******************************************************************************
 * Function Externs
 *******************************************************************************/
-
+extern void Delay(int multiplier);
 /******************************************************************************
 * Function Definitions
 *******************************************************************************/
@@ -53,19 +55,31 @@ void DisplayImage (int PhotoIndex)
 	switch(PhotoIndex)
 	{
 		case 0:
-			GLCD_DisplayString(0, 6, 0, (unsigned char*)"<      Flower       >");
-			GLCD_Bitmap(0, 10, 320, 240, (unsigned char*)FLOWER_pixel_data);
+			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<      Anos       >");
+			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)ANOS_pixel_data);
 			break;
 		case 1:
-			GLCD_DisplayString(0, 6, 0, (unsigned char*)"<     Landscape     >");
-			GLCD_Bitmap(0, 10, 320, 240, (unsigned char*)AUTUMNLANDSCAPE_pixel_data);
+			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<     Giorno     >");
+			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)GIORNO_pixel_data);
+			break;
+		case 2:
+			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<      Goku      >");
+			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)GIMP_IMAGE_pixel_data);
+			break;
+		case 3:
+			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<      Kaido      >");
+			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)KAIDO_pixel_data);
+			break;
+		case 4:
+			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<      Saitama    >");
+			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)SAITAMA_pixel_data);
 			break;
 	}
 }
 /******************************************************************************
 * Photo viewer program
 *******************************************************************************/
-void StartPhotoViewer ()
+void StartPhotoViewer (void)
 {
 	int joystick = 0;
 	int photoIndex = 0;
@@ -74,22 +88,30 @@ void StartPhotoViewer ()
 	GLCD_SetBackColor(White);
 	GLCD_SetTextColor(Black);
 	
-	GLCD_DisplayString(0, 4, 1, (unsigned char*)"Gallery");
-	GLCD_DisplayString(0, 5, 0, (unsigned char*)"Push joystic to exit.");
-	GLCD_DisplayString(0, 6, 0, (unsigned char*)"<                   >");
-	
+	GLCD_DisplayString(0, 4, 1, (unsigned char*)"   Top 5 Anime Characters");
+	GLCD_DisplayString(5, 4, 1, (unsigned char*)"Push joystic to exit.");
+	GLCD_DisplayString(6, 4, 1, (unsigned char*)"<                   >");
+	DisplayImage(photoIndex);
 	while(1)
 	{
 		joystick = get_button();
 		
-		if(joystick == KBD_UP || joystick == KBD_DOWN)
+		if(joystick == KBD_LEFT)
 		{
-			photoIndex = !photoIndex; //only have 2 images because of storage limitations
+			photoIndex == 4?(photoIndex = 0):(photoIndex++);
+			DisplayImage(photoIndex);
+		}
+		else if(joystick == KBD_RIGHT)
+		{
+			photoIndex == 0?(photoIndex = 4):(photoIndex--);
+			DisplayImage(photoIndex);
 		}
 		else if(joystick == KBD_SELECT)
 		{
 			break;
 		}
+		
+		Delay(7000);
 	}
 	
 }

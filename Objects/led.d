@@ -1,5 +1,5 @@
 .\objects\led.o: LED.c
-.\objects\led.o: .\USB Audio API\LPC17xx.h
+.\objects\led.o: LPC17xx.h
 .\objects\led.o: C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h
 .\objects\led.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\stdint.h
 .\objects\led.o: C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h

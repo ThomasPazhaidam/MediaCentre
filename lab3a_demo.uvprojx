@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>C:\Keil_v5\ARM\RV31\INC;..\MediaCentre;.\USB Audio API;.\Images</IncludePath>
+              <IncludePath>C:\Keil_v5\ARM\RV31\INC;.\USB Audio API;.\Images;..\MediaCentre-develop</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -469,25 +469,55 @@
               <FileType>1</FileType>
               <FilePath>.\USB Audio API\adcuser.c</FilePath>
             </File>
+            <File>
+              <FileName>nowplaying.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USB Audio API\nowplaying.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Photo Viewer</GroupName>
           <Files>
             <File>
-              <FileName>flower.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Images\flower.c</FilePath>
-            </File>
-            <File>
-              <FileName>landscape.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Images\landscape.c</FilePath>
-            </File>
-            <File>
               <FileName>PhotoViewer.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\PhotoViewer.c</FilePath>
+            </File>
+            <File>
+              <FileName>anos.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Images\anos.c</FilePath>
+            </File>
+            <File>
+              <FileName>giorno.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Images\giorno.c</FilePath>
+            </File>
+            <File>
+              <FileName>goku.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Images\goku.c</FilePath>
+            </File>
+            <File>
+              <FileName>kaido.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Images\kaido.c</FilePath>
+            </File>
+            <File>
+              <FileName>saitama.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Images\saitama.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>snake</GroupName>
+          <Files>
+            <File>
+              <FileName>snake.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\snake.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -507,7 +537,7 @@
   <RTE>
     <apis>
       <api Capiversion="1.0.0" Cclass="CMSIS" Cgroup="RTOS" exclusive="1">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.7.0"/>
+        <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>

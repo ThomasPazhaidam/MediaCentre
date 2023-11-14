@@ -39,6 +39,8 @@
 * Function Externs
 *******************************************************************************/
 extern void LaunchMusicPlayer (void);
+extern void StartPhotoViewer (void);
+extern void InitializeSnakeGame();
 /******************************************************************************
 * Function Definitions
 *******************************************************************************/
@@ -52,7 +54,7 @@ int Initialize_LPC1768()
 	GLCD_Clear(White);
 	GLCD_SetBackColor(White);
 	GLCD_SetTextColor(Black);
-	GLCD_DisplayString(0, 4, 1, (unsigned char*)"Main Menu");
+	GLCD_DisplayString(0, 4, 1, (unsigned char*)"  Main Menu");
 	
 	return 0;
 }
@@ -68,7 +70,7 @@ void Delay(int multiplier)
 /******************************************************************************
 * update main menu item index
 *******************************************************************************/
-int UpdateItemSelection(int ItemIndex, int JoystickVal) 
+int UpdateItemSelection(int ItemIndex, int JoystickVal, int MaxIndex) 
 {
 	int newItemIndex = 0;
 	switch(JoystickVal){
@@ -83,7 +85,7 @@ int UpdateItemSelection(int ItemIndex, int JoystickVal)
 			}
 			break;
 		case KBD_DOWN:
-			if(ItemIndex == 2)
+			if(ItemIndex == MaxIndex)
 			{
 				newItemIndex = 0;
 			}
@@ -92,6 +94,8 @@ int UpdateItemSelection(int ItemIndex, int JoystickVal)
 				newItemIndex = ItemIndex + 1;
 			}			
 			break;
+		default:
+			newItemIndex = ItemIndex;
 		}	
 
 		return newItemIndex;
@@ -103,7 +107,7 @@ int UpdateItemSelection(int ItemIndex, int JoystickVal)
 void UpdateGlcdItemSelection(int ItemIndex) 
 {
 	
-	unsigned char itemNames[3][256] = {"Gallery", "Music Player", "The Woods"};
+	unsigned char itemNames[3][256] = {"Top 5 Anime Characters", "Music Player", "The Woods"};
 	int i = 0;
 	
 	GLCD_SetBackColor(White);
@@ -133,11 +137,13 @@ void OpenSelectedItem(int ItemIndex)
 	switch (ItemIndex)
 	{
 	case 0:
+		StartPhotoViewer();
 		break;
 	case 1:
 		LaunchMusicPlayer();
 		break;
 	case 2:
+		InitializeSnakeGame();
 		break;
 	}
 	GLCD_Clear(White);
@@ -157,12 +163,12 @@ int main( void )
 	while(1)
 	{
 		joystickVal = get_button();
-		itemIndex = UpdateItemSelection(itemIndex, joystickVal);
+		itemIndex = UpdateItemSelection(itemIndex, joystickVal, 2);
 		UpdateGlcdItemSelection(itemIndex);
 		if(joystickVal == KBD_SELECT)
 		{
 			OpenSelectedItem(itemIndex);
 		}
-		Delay(60000);
+		Delay(7000);
 	}
 }

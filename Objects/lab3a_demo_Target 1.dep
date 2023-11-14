@@ -1,10 +1,10 @@
 Dependencies for Project 'lab3a_demo', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCCv506u6
-F (.\Font_6x8_h.h)(0x65407145)()
-F (.\Font_16x24_h.h)(0x65407145)()
-F (.\GLCD.h)(0x65407145)()
-F (.\GLCD_SPI_LPC1700.c)(0x65407145)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\glcd_spi_lpc1700.o --omf_browse .\objects\glcd_spi_lpc1700.crf --depend .\objects\glcd_spi_lpc1700.d)
-I (.\USB Audio API\lpc17xx.h)(0x654D131E)
+F (.\Font_6x8_h.h)(0x6552D645)()
+F (.\Font_16x24_h.h)(0x6552D645)()
+F (.\GLCD.h)(0x6552D645)()
+F (.\GLCD_SPI_LPC1700.c)(0x6552D645)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\glcd_spi_lpc1700.o --omf_browse .\objects\glcd_spi_lpc1700.crf --depend .\objects\glcd_spi_lpc1700.d)
+I (.\USB Audio API\lpc17xx.h)(0x6552D647)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
@@ -12,11 +12,11 @@ I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cm
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include\system_LPC17xx.h)(0x584985E2)
-I (GLCD.h)(0x65407145)
-I (Font_6x8_h.h)(0x65407145)
-I (Font_16x24_h.h)(0x65407145)
-F (.\LED.c)(0x65407145)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
-I (.\USB Audio API\LPC17xx.h)(0x654D131E)
+I (GLCD.h)(0x6552D645)
+I (Font_6x8_h.h)(0x6552D645)
+I (Font_16x24_h.h)(0x6552D645)
+F (.\LED.c)(0x6552D645)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (LPC17xx.h)(0x6552D645)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
@@ -24,10 +24,10 @@ I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cm
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include\system_LPC17xx.h)(0x584985E2)
-I (LED.h)(0x65407145)
-F (.\LED.h)(0x65407145)()
-F (.\KBD.c)(0x654D2040)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\kbd.o --omf_browse .\objects\kbd.crf --depend .\objects\kbd.d)
-I (.\USB Audio API\LPC17xx.H)(0x654D131E)
+I (LED.h)(0x6552D645)
+F (.\LED.h)(0x6552D645)()
+F (.\KBD.c)(0x6552D645)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\kbd.o --omf_browse .\objects\kbd.crf --depend .\objects\kbd.d)
+I (.\USB Audio API\LPC17xx.H)(0x6552D647)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
@@ -35,37 +35,37 @@ I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cm
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include\system_LPC17xx.h)(0x584985E2)
-I (KBD.h)(0x654D2044)
-F (.\KBD.h)(0x654D2044)()
-F (.\main.c)(0x654DA044)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (osObjects.h)(0x65407145)
+I (KBD.h)(0x6552D645)
+F (.\KBD.h)(0x6552D645)()
+F (.\main.c)(0x6552F249)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (osObjects.h)(0x6552D645)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stddef.h)(0x5E8EE582)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdio.h)(0x5E8EE582)
-I (.\RTE\_Target_1\RTE_Components.h)(0x654D219F)
-I (GLCD.h)(0x65407145)
-I (KBD.h)(0x654D2044)
-F (.\USB Audio API\usbcore.c)(0x654D2BB9)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbcore.o --omf_browse .\objects\usbcore.crf --depend .\objects\usbcore.d)
-I (USB Audio API\type.h)(0x654D131E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6552DB02)
+I (GLCD.h)(0x6552D645)
+I (KBD.h)(0x6552D645)
+F (.\USB Audio API\usbcore.c)(0x6552D648)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbcore.o --omf_browse .\objects\usbcore.crf --depend .\objects\usbcore.d)
+I (USB Audio API\type.h)(0x6552D648)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
-I (USB Audio API\usb.h)(0x654D131E)
-I (USB Audio API\usbcfg.h)(0x654D131E)
-I (USB Audio API\usbhw.h)(0x654D131E)
-I (USB Audio API\usbcore.h)(0x654D131E)
-I (USB Audio API\usbdesc.h)(0x654D131E)
-I (USB Audio API\usbuser.h)(0x654D131E)
-I (USB Audio API\audio.h)(0x654D131E)
-I (USB Audio API\adcuser.h)(0x654D131E)
-F (.\USB Audio API\usbdesc.c)(0x654D131E)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbdesc.o --omf_browse .\objects\usbdesc.crf --depend .\objects\usbdesc.d)
-I (USB Audio API\type.h)(0x654D131E)
+I (USB Audio API\usb.h)(0x6552D648)
+I (USB Audio API\usbcfg.h)(0x6552D648)
+I (USB Audio API\usbhw.h)(0x6552D648)
+I (USB Audio API\usbcore.h)(0x6552D648)
+I (USB Audio API\usbdesc.h)(0x6552D648)
+I (USB Audio API\usbuser.h)(0x6552D648)
+I (USB Audio API\audio.h)(0x6552D648)
+I (USB Audio API\adcuser.h)(0x6552D648)
+F (.\USB Audio API\usbdesc.c)(0x6552D648)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbdesc.o --omf_browse .\objects\usbdesc.crf --depend .\objects\usbdesc.d)
+I (USB Audio API\type.h)(0x6552D648)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
-I (USB Audio API\usb.h)(0x654D131E)
-I (USB Audio API\audio.h)(0x654D131E)
-I (USB Audio API\usbcfg.h)(0x654D131E)
-I (USB Audio API\usbdesc.h)(0x654D131E)
-F (.\USB Audio API\usbdmain.c)(0x654DA34D)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbdmain.o --omf_browse .\objects\usbdmain.crf --depend .\objects\usbdmain.d)
-I (USB Audio API\LPC17xx.h)(0x654D131E)
+I (USB Audio API\usb.h)(0x6552D648)
+I (USB Audio API\audio.h)(0x6552D648)
+I (USB Audio API\usbcfg.h)(0x6552D648)
+I (USB Audio API\usbdesc.h)(0x6552D648)
+F (.\USB Audio API\usbdmain.c)(0x6552EBD9)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbdmain.o --omf_browse .\objects\usbdmain.crf --depend .\objects\usbdmain.d)
+I (USB Audio API\LPC17xx.h)(0x6552D647)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
@@ -73,16 +73,17 @@ I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cm
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include\system_LPC17xx.h)(0x584985E2)
-I (USB Audio API\type.h)(0x654D131E)
-I (USB Audio API\usb.h)(0x654D131E)
-I (USB Audio API\usbcfg.h)(0x654D131E)
-I (USB Audio API\usbhw.h)(0x654D131E)
-I (USB Audio API\usbcore.h)(0x654D131E)
-I (USB Audio API\usbaudio.h)(0x654D131E)
-I (..\MediaCentre\GLCD.h)(0x65407145)
-I (..\MediaCentre\KBD.h)(0x654D2044)
-F (.\USB Audio API\usbhw.c)(0x654D131E)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbhw.o --omf_browse .\objects\usbhw.crf --depend .\objects\usbhw.d)
-I (USB Audio API\LPC17xx.h)(0x654D131E)
+I (USB Audio API\type.h)(0x6552D648)
+I (USB Audio API\usb.h)(0x6552D648)
+I (USB Audio API\usbcfg.h)(0x6552D648)
+I (USB Audio API\usbhw.h)(0x6552D648)
+I (USB Audio API\usbcore.h)(0x6552D648)
+I (USB Audio API\usbaudio.h)(0x6552D648)
+I (..\MediaCentre-develop\GLCD.h)(0x6552D645)
+I (..\MediaCentre-develop\KBD.h)(0x6552D645)
+I (USB Audio API\nowplaying.c)(0x6552E7BF)
+F (.\USB Audio API\usbhw.c)(0x6552D648)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbhw.o --omf_browse .\objects\usbhw.crf --depend .\objects\usbhw.d)
+I (USB Audio API\LPC17xx.h)(0x6552D647)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
@@ -90,53 +91,69 @@ I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cm
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include\system_LPC17xx.h)(0x584985E2)
-I (USB Audio API\type.h)(0x654D131E)
-I (USB Audio API\usb.h)(0x654D131E)
-I (USB Audio API\usbcfg.h)(0x654D131E)
-I (USB Audio API\usbreg.h)(0x654D131E)
-I (USB Audio API\usbhw.h)(0x654D131E)
-I (USB Audio API\usbcore.h)(0x654D131E)
-I (USB Audio API\usbuser.h)(0x654D131E)
-F (.\USB Audio API\usbuser.c)(0x654D131E)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbuser.o --omf_browse .\objects\usbuser.crf --depend .\objects\usbuser.d)
-I (USB Audio API\type.h)(0x654D131E)
+I (USB Audio API\type.h)(0x6552D648)
+I (USB Audio API\usb.h)(0x6552D648)
+I (USB Audio API\usbcfg.h)(0x6552D648)
+I (USB Audio API\usbreg.h)(0x6552D648)
+I (USB Audio API\usbhw.h)(0x6552D648)
+I (USB Audio API\usbcore.h)(0x6552D648)
+I (USB Audio API\usbuser.h)(0x6552D648)
+F (.\USB Audio API\usbuser.c)(0x6552D648)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\usbuser.o --omf_browse .\objects\usbuser.crf --depend .\objects\usbuser.d)
+I (USB Audio API\type.h)(0x6552D648)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
-I (USB Audio API\usb.h)(0x654D131E)
-I (USB Audio API\usbcfg.h)(0x654D131E)
-I (USB Audio API\usbhw.h)(0x654D131E)
-I (USB Audio API\usbcore.h)(0x654D131E)
-I (USB Audio API\usbuser.h)(0x654D131E)
-I (USB Audio API\usbaudio.h)(0x654D131E)
-F (.\USB Audio API\adcuser.c)(0x654D23E6)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\adcuser.o --omf_browse .\objects\adcuser.crf --depend .\objects\adcuser.d)
-I (USB Audio API\type.h)(0x654D131E)
+I (USB Audio API\usb.h)(0x6552D648)
+I (USB Audio API\usbcfg.h)(0x6552D648)
+I (USB Audio API\usbhw.h)(0x6552D648)
+I (USB Audio API\usbcore.h)(0x6552D648)
+I (USB Audio API\usbuser.h)(0x6552D648)
+I (USB Audio API\usbaudio.h)(0x6552D648)
+F (.\USB Audio API\adcuser.c)(0x6552D648)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\adcuser.o --omf_browse .\objects\adcuser.crf --depend .\objects\adcuser.d)
+I (USB Audio API\type.h)(0x6552D648)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
-I (USB Audio API\usb.h)(0x654D131E)
-I (USB Audio API\audio.h)(0x654D131E)
-I (USB Audio API\usbcfg.h)(0x654D131E)
-I (USB Audio API\usbcore.h)(0x654D131E)
-I (USB Audio API\adcuser.h)(0x654D131E)
-I (USB Audio API\usbaudio.h)(0x654D131E)
-F (.\Images\flower.c)(0x654D9AE2)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\flower.o --omf_browse .\objects\flower.crf --depend .\objects\flower.d)
-F (.\Images\landscape.c)(0x654D9AE7)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\landscape.o --omf_browse .\objects\landscape.crf --depend .\objects\landscape.d)
-F (.\PhotoViewer.c)(0x654DAF7D)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\photoviewer.o --omf_browse .\objects\photoviewer.crf --depend .\objects\photoviewer.d)
-I (osObjects.h)(0x65407145)
+I (USB Audio API\usb.h)(0x6552D648)
+I (USB Audio API\audio.h)(0x6552D648)
+I (USB Audio API\usbcfg.h)(0x6552D648)
+I (USB Audio API\usbcore.h)(0x6552D648)
+I (USB Audio API\adcuser.h)(0x6552D648)
+I (USB Audio API\usbaudio.h)(0x6552D648)
+F (.\USB Audio API\nowplaying.c)(0x6552E7BF)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\nowplaying.o --omf_browse .\objects\nowplaying.crf --depend .\objects\nowplaying.d)
+F (.\PhotoViewer.c)(0x6552EAC2)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\photoviewer.o --omf_browse .\objects\photoviewer.crf --depend .\objects\photoviewer.d)
+I (osObjects.h)(0x6552D645)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stddef.h)(0x5E8EE582)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdio.h)(0x5E8EE582)
-I (.\RTE\_Target_1\RTE_Components.h)(0x654D219F)
-I (GLCD.h)(0x65407145)
-I (KBD.h)(0x654D2044)
-I (.\Images\flower.c)(0x654D9AE2)
-I (.\Images\landscape.c)(0x654D9AE7)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6552DB02)
+I (GLCD.h)(0x6552D645)
+I (KBD.h)(0x6552D645)
+I (.\Images\giorno.c)(0x6552D8C9)
+I (.\Images\anos.c)(0x6552D8C1)
+I (.\Images\goku.c)(0x6552D8CD)
+I (.\Images\kaido.c)(0x6552D8D0)
+I (.\Images\saitama.c)(0x6552D8D6)
+F (.\Images\anos.c)(0x6552D8C1)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\anos.o --omf_browse .\objects\anos.crf --depend .\objects\anos.d)
+F (.\Images\giorno.c)(0x6552D8C9)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\giorno.o --omf_browse .\objects\giorno.crf --depend .\objects\giorno.d)
+F (.\Images\goku.c)(0x6552D8CD)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\goku.o --omf_browse .\objects\goku.crf --depend .\objects\goku.d)
+F (.\Images\kaido.c)(0x6552D8D0)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\kaido.o --omf_browse .\objects\kaido.crf --depend .\objects\kaido.d)
+F (.\Images\saitama.c)(0x6552D8D6)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\saitama.o --omf_browse .\objects\saitama.crf --depend .\objects\saitama.d)
+F (.\snake.c)(0x6552F224)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\snake.o --omf_browse .\objects\snake.crf --depend .\objects\snake.d)
+I (osObjects.h)(0x6552D645)
+I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x626FF39E)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stddef.h)(0x5E8EE582)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdio.h)(0x5E8EE582)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6552DB02)
+I (GLCD.h)(0x6552D645)
+I (KBD.h)(0x6552D645)
 F (C:/Users/Thomas/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS/RTX/LIB/ARM/RTX_CM3.lib)(0x626FF39E)()
-F (RTE/CMSIS/RTX_Conf_CM.c)(0x65407145)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\rtx_conf_cm.o --omf_browse .\objects\rtx_conf_cm.crf --depend .\objects\rtx_conf_cm.d)
+F (RTE/CMSIS/RTX_Conf_CM.c)(0x6552DBB0)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\rtx_conf_cm.o --omf_browse .\objects\rtx_conf_cm.crf --depend .\objects\rtx_conf_cm.d)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stddef.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC\RTX_CM_lib.h)(0x626FF39E)
-F (C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/EventRecorder.c)(0x6242F304)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\eventrecorder.o --omf_browse .\objects\eventrecorder.crf --depend .\objects\eventrecorder.d)
-I (.\RTE\_Target_1\RTE_Components.h)(0x654D219F)
-I (.\USB Audio API\LPC17xx.h)(0x654D131E)
+F (C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/EventRecorder.c)(0x6242F304)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\eventrecorder.o --omf_browse .\objects\eventrecorder.crf --depend .\objects\eventrecorder.d)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6552DB02)
+I (.\USB Audio API\LPC17xx.h)(0x6552D647)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
@@ -146,11 +163,11 @@ I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mp
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include\system_LPC17xx.h)(0x584985E2)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\string.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include\EventRecorder.h)(0x5B8FF93E)
-I (.\RTE\Compiler\EventRecorderConf.h)(0x65407145)
-F (RTE/Compiler/EventRecorderConf.h)(0x65407145)()
-F (C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.7.1/RTE_Driver/GPIO_LPC17xx.c)(0x5D5C2A1A)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\gpio_lpc17xx.o --omf_browse .\objects\gpio_lpc17xx.crf --depend .\objects\gpio_lpc17xx.d)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x6552D647)
+F (RTE/Compiler/EventRecorderConf.h)(0x6552D647)()
+F (C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.7.1/RTE_Driver/GPIO_LPC17xx.c)(0x5D5C2A1A)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\gpio_lpc17xx.o --omf_browse .\objects\gpio_lpc17xx.crf --depend .\objects\gpio_lpc17xx.d)
 I (C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.7.1/RTE_Driver/GPIO_LPC17xx.h)(0x5D5C2A1A)
-I (.\USB Audio API\LPC17xx.h)(0x654D131E)
+I (.\USB Audio API\LPC17xx.h)(0x6552D647)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
@@ -158,8 +175,8 @@ I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cm
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include\system_LPC17xx.h)(0x584985E2)
-F (C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.7.1/RTE_Driver/PIN_LPC17xx.c)(0x5D5C2A1A)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\pin_lpc17xx.o --omf_browse .\objects\pin_lpc17xx.crf --depend .\objects\pin_lpc17xx.d)
-I (.\USB Audio API\LPC17xx.h)(0x654D131E)
+F (C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.7.1/RTE_Driver/PIN_LPC17xx.c)(0x5D5C2A1A)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\pin_lpc17xx.o --omf_browse .\objects\pin_lpc17xx.crf --depend .\objects\pin_lpc17xx.d)
+I (.\USB Audio API\LPC17xx.h)(0x6552D647)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
@@ -169,11 +186,11 @@ I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mp
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include\system_LPC17xx.h)(0x584985E2)
 I (C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.7.1/RTE_Driver/PIN_LPC17xx.h)(0x5D5C2A1A)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8EE582)
-F (RTE/Device/LPC1768/RTE_Device.h)(0x65407145)()
-F (RTE/Device/LPC1768/startup_LPC17xx.s)(0x65407145)(--cpu Cortex-M3 --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "LPC175x_6x SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_lpc17xx.lst --xref -o .\objects\startup_lpc17xx.o --depend .\objects\startup_lpc17xx.d)
-F (RTE/Device/LPC1768/system_LPC17xx.c)(0x65407145)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ..\MediaCentre -I ".\USB Audio API" -I .\Images-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\system_lpc17xx.o --omf_browse .\objects\system_lpc17xx.crf --depend .\objects\system_lpc17xx.d)
+F (RTE/Device/LPC1768/RTE_Device.h)(0x6552D647)()
+F (RTE/Device/LPC1768/startup_LPC17xx.s)(0x6552D647)(--cpu Cortex-M3 --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "LPC175x_6x SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_lpc17xx.lst --xref -o .\objects\startup_lpc17xx.o --depend .\objects\startup_lpc17xx.d)
+F (RTE/Device/LPC1768/system_LPC17xx.c)(0x6552E4AB)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC -I ".\USB Audio API" -I .\Images -I ..\MediaCentre-develop-I.\RTE\Compiler-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\Device\Include-IC:\Users\Thomas\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.1\RTE_Driver-D__UVISION_VERSION="538" -D_RTE_ -DLPC175x_6x -D_RTE_-o .\objects\system_lpc17xx.o --omf_browse .\objects\system_lpc17xx.crf --depend .\objects\system_lpc17xx.d)
 I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8EE582)
-I (.\USB Audio API\LPC17xx.h)(0x654D131E)
+I (.\USB Audio API\LPC17xx.h)(0x6552D647)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626FF39E)
 I (C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626FF39E)

@@ -539,3 +539,67 @@ void SystemInit (void)
   LPC_SC->FLASHCFG  = (LPC_SC->FLASHCFG & ~0x0000F000) | FLASHCFG_Val;
 #endif
 }
+/**
+ * Determine the CPU Clock Frequency (SystemFrequency)
+ *
+ * @param none
+ * @return none
+ *
+ * @brief	Function determines the microcontroller's CPU clock frequency
+ *			It populates this value into the "SystemFrequeny" variable.
+ *			Recommended to call this function in main()
+ */
+#define IRC_OSC     ( 4000000UL)        /* Internal RC oscillator frequency   */
+
+
+/*----------------------------------------------------------------------------
+  Clock Variable definitions
+ *----------------------------------------------------------------------------*/
+uint32_t SystemFrequency = IRC_OSC; /*!< System Clock Frequency (Core Clock)  */
+
+void SystemClockUpdate (void) {
+	/* Determine clock frequency according to clock register values             */
+	if (((LPC_SC->PLL0STAT >> 24)&3)==3) {/* If PLL0 enabled and connected      */
+		switch (LPC_SC->CLKSRCSEL & 0x03) {
+			case 0:                           /* Internal RC oscillator => PLL0     */
+			case 3:                           /* Reserved, default to Internal RC   */
+				SystemFrequency = (IRC_OSC * 
+				                  (((2 * ((LPC_SC->PLL0STAT & 0x7FFF) + 1))) /
+				                  (((LPC_SC->PLL0STAT >> 16) & 0xFF) + 1))   /
+				                  ((LPC_SC->CCLKCFG & 0xFF)+ 1));
+				break;
+			case 1:                           /* Main oscillator => PLL0            */
+				SystemFrequency = (OSC_CLK * 
+				                  (((2 * ((LPC_SC->PLL0STAT & 0x7FFF) + 1))) /
+				                  (((LPC_SC->PLL0STAT >> 16) & 0xFF) + 1))   /
+				                  ((LPC_SC->CCLKCFG & 0xFF)+ 1));
+				break;
+			case 2:                           /* RTC oscillator => PLL0             */
+				SystemFrequency = (RTC_CLK * 
+				                  (((2 * ((LPC_SC->PLL0STAT & 0x7FFF) + 1))) /
+				                  (((LPC_SC->PLL0STAT >> 16) & 0xFF) + 1))   /
+				                  ((LPC_SC->CCLKCFG & 0xFF)+ 1));
+				break;
+		}
+		
+	} else {
+		switch (LPC_SC->CLKSRCSEL & 0x03) {
+			case 0:                           /* Internal RC oscillator => PLL0     */
+			case 3:                           /* Reserved, default to Internal RC   */
+				SystemFrequency = IRC_OSC / ((LPC_SC->CCLKCFG & 0xFF)+ 1);
+				break;
+			case 1:                           /* Main oscillator => PLL0            */
+				SystemFrequency = OSC_CLK / ((LPC_SC->CCLKCFG & 0xFF)+ 1);
+				break;
+			case 2:                           /* RTC oscillator => PLL0             */
+				SystemFrequency = RTC_CLK / ((LPC_SC->CCLKCFG & 0xFF)+ 1);
+				break;
+		}
+	}
+}
+/**
+ * @}
+ */
+/**
+ * @}
+ */

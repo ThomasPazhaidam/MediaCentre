@@ -25,8 +25,9 @@
 
 #include "GLCD.h"
 #include "KBD.h"
-extern  void SystemCoreClockUpdate (void);
-extern uint32_t SystemCoreClock;  
+#include "nowplaying.c"
+extern  void SystemClockUpdate (void);
+extern uint32_t SystemFrequency;  
 uint8_t  Mute;                                 /* Mute State */
 uint32_t Volume;                               /* Volume Level */
 
@@ -112,8 +113,6 @@ void TIMER0_IRQHandler(void)
     if (val > 7) val = 7;                   /* Limit Value */
   }
 	
-	GLCD_Bargraph(4, 10, Volume, 20, 20);
-	
   LPC_TIM0->IR = 1;                         /* Clear Interrupt Flag */
 }
 
@@ -128,10 +127,10 @@ void LaunchMusicPlayer (void)
 	GLCD_Clear(Blue);
 	GLCD_SetTextColor(White);
 	GLCD_DisplayString(0, 4, 1, (unsigned char*)"Music Player");
-	GLCD_DisplayString(2, 4, 0, (unsigned char*)"Push joystic to exit.");
+	GLCD_DisplayString(1, 4, 1, (unsigned char*)"Push joystic to exit.");
 	
   /* SystemClockUpdate() updates the SystemFrequency variable */
-  SystemCoreClockUpdate();
+  SystemClockUpdate();
 
   LPC_PINCON->PINSEL1 &=~((0x03<<18)|(0x03<<20));  
   /* P0.25, A0.0, function 01, P0.26 AOUT, function 10 */
@@ -151,16 +150,16 @@ void LaunchMusicPlayer (void)
   {
 	case 0x00:
 	default:
-	  pclk = SystemCoreClock/4;
+	  pclk = SystemFrequency/4;
 	break;
 	case 0x01:
-	  pclk = SystemCoreClock;
+	  pclk = SystemFrequency;
 	break; 
 	case 0x02:
-	  pclk = SystemCoreClock/2;
+	  pclk = SystemFrequency/2;
 	break; 
 	case 0x03:
-	  pclk = SystemCoreClock/8;
+	  pclk = SystemFrequency/8;
 	break;
   }
 
@@ -171,7 +170,7 @@ void LaunchMusicPlayer (void)
 
   USB_Init();				/* USB Initialization */
   USB_Connect(TRUE);		/* USB Connect */
-
+	GLCD_Bitmap(0, 10, 200, 123, (unsigned char*)NOWPLAYING_pixel_data);
   while( 1 )
 	{
 		int joystickVal = 0;

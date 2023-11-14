@@ -13,5 +13,6 @@
 .\objects\usbdmain.o: USB Audio API\usbhw.h
 .\objects\usbdmain.o: USB Audio API\usbcore.h
 .\objects\usbdmain.o: USB Audio API\usbaudio.h
-.\objects\usbdmain.o: ..\MediaCentre\GLCD.h
-.\objects\usbdmain.o: ..\MediaCentre\KBD.h
+.\objects\usbdmain.o: ..\MediaCentre-develop\GLCD.h
+.\objects\usbdmain.o: ..\MediaCentre-develop\KBD.h
+.\objects\usbdmain.o: USB Audio API\nowplaying.c
