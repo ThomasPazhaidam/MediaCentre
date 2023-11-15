@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>C:\Keil_v5\ARM\RV31\INC;.\USB Audio API;.\Images;..\MediaCentre-develop</IncludePath>
+              <IncludePath>C:\Keil_v5\ARM\RV31\INC;.\USB Audio API;.\Images;..\MediaCentre</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -395,11 +395,6 @@
               <FilePath>.\Font_16x24_h.h</FilePath>
             </File>
             <File>
-              <FileName>GLCD.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\GLCD.h</FilePath>
-            </File>
-            <File>
               <FileName>GLCD_SPI_LPC1700.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\GLCD_SPI_LPC1700.c</FilePath>
@@ -423,6 +418,11 @@
               <FileName>KBD.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\KBD.h</FilePath>
+            </File>
+            <File>
+              <FileName>GLCD.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\Downloads\MediaCentre\MediaCentre\MediaCentre-develop\GLCD.h</FilePath>
             </File>
           </Files>
         </Group>

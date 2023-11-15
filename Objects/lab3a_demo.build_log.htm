@@ -21,74 +21,58 @@ Target DLL:      UL2CM3.DLL V1.164.8.0
 Dialog DLL:      TARMP1.DLL V1.27.1.0
  
 <h2>Project:</h2>
-C:\Users\Thomas\Downloads\MediaCentre\MediaCentre\MediaCentre-develop\lab3a_demo.uvprojx
-Project File Date:  11/13/2023
+C:\Users\Thomas\Documents\COE718\MediaCentre\lab3a_demo.uvprojx
+Project File Date:  11/15/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCCv506u6\Bin'
 Rebuild target 'Target 1'
-compiling main.c...
-main.c(43): warning:  #1295-D: Deprecated declaration InitializeSnakeGame - give arg types
-  extern void InitializeSnakeGame();
-main.c: 1 warning, 0 errors
-compiling nowplaying.c...
-USB Audio API\nowplaying.c(7): warning:  #177-D: variable "NOWPLAYING_pixel_data"  was declared but never referenced
-  static const unsigned char NOWPLAYING_pixel_data[200 * 123 * 2 + 1] =
-USB Audio API\nowplaying.c: 1 warning, 0 errors
+compiling usbuser.c...
+compiling usbcore.c...
+compiling usbdesc.c...
 compiling anos.c...
 Images\anos.c(7): warning:  #177-D: variable "ANOS_pixel_data"  was declared but never referenced
   static const unsigned char ANOS_pixel_data[100 * 100 * 2 + 1] =
 Images\anos.c: 1 warning, 0 errors
-compiling usbuser.c...
-compiling usbdesc.c...
+compiling nowplaying.c...
+USB Audio API\nowplaying.c(7): warning:  #177-D: variable "NOWPLAYING_pixel_data"  was declared but never referenced
+  static const unsigned char NOWPLAYING_pixel_data[200 * 123 * 2 + 1] =
+USB Audio API\nowplaying.c: 1 warning, 0 errors
 compiling adcuser.c...
-compiling usbcore.c...
+compiling main.c...
 compiling PhotoViewer.c...
-compiling giorno.c...
-Images\giorno.c(7): warning:  #177-D: variable "GIORNO_pixel_data"  was declared but never referenced
-  static const unsigned char GIORNO_pixel_data[100 * 100 * 2 + 1] =
-Images\giorno.c: 1 warning, 0 errors
-compiling goku.c...
-Images\goku.c(7): warning:  #177-D: variable "GIMP_IMAGE_pixel_data"  was declared but never referenced
-  static const unsigned char GIMP_IMAGE_pixel_data[100 * 100 * 2 + 1] =
-Images\goku.c: 1 warning, 0 errors
 compiling KBD.c...
 compiling usbdmain.c...
 compiling LED.c...
 compiling usbhw.c...
 compiling GLCD_SPI_LPC1700.c...
-compiling saitama.c...
-Images\saitama.c(7): warning:  #177-D: variable "SAITAMA_pixel_data"  was declared but never referenced
-  static const unsigned char SAITAMA_pixel_data[100 * 100 * 2 + 1] =
-Images\saitama.c: 1 warning, 0 errors
+compiling goku.c...
+Images\goku.c(7): warning:  #177-D: variable "GIMP_IMAGE_pixel_data"  was declared but never referenced
+  static const unsigned char GIMP_IMAGE_pixel_data[100 * 100 * 2 + 1] =
+Images\goku.c: 1 warning, 0 errors
 compiling kaido.c...
 Images\kaido.c(7): warning:  #177-D: variable "KAIDO_pixel_data"  was declared but never referenced
   static const unsigned char KAIDO_pixel_data[100 * 99 * 2 + 1] =
 Images\kaido.c: 1 warning, 0 errors
+compiling giorno.c...
+Images\giorno.c(7): warning:  #177-D: variable "GIORNO_pixel_data"  was declared but never referenced
+  static const unsigned char GIORNO_pixel_data[100 * 100 * 2 + 1] =
+Images\giorno.c: 1 warning, 0 errors
+compiling saitama.c...
+Images\saitama.c(7): warning:  #177-D: variable "SAITAMA_pixel_data"  was declared but never referenced
+  static const unsigned char SAITAMA_pixel_data[100 * 100 * 2 + 1] =
+Images\saitama.c: 1 warning, 0 errors
 compiling RTX_Conf_CM.c...
 compiling snake.c...
-snake.c(82): warning:  #177-D: variable "snakeDirection"  was declared but never referenced
-  	int snakeDirection = LEFT;
-snake.c(83): warning:  #177-D: variable "prevSnakeDirection"  was declared but never referenced
-  	int prevSnakeDirection = LEFT;
-snake.c(84): warning:  #177-D: variable "snakeLen"  was declared but never referenced
-  	int snakeLen = 2;
-snake.c(85): warning:  #177-D: variable "snakePosX"  was declared but never referenced
-  	int snakePosX = 4;
-snake.c(86): warning:  #177-D: variable "snakePosY"  was declared but never referenced
-  	int snakePosY = 9;
-snake.c(87): warning:  #550-D: variable "speed"  was set but never used
-  	int speed = 0;
-snake.c: 6 warnings, 0 errors
 assembling startup_LPC17xx.s...
-compiling PIN_LPC17xx.c...
 compiling GPIO_LPC17xx.c...
 compiling EventRecorder.c...
+compiling PIN_LPC17xx.c...
 compiling system_LPC17xx.c...
 linking...
-.\Objects\lab3a_demo.axf: error: L6047U: The size of this image (173996 bytes) exceeds the maximum allowed for this version of the linker
+.\Objects\lab3a_demo.axf: error: L6047U: The size of this image (174804 bytes) exceeds the maximum allowed for this version of the linker
 Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
-".\Objects\lab3a_demo.axf" - 1 Error(s), 13 Warning(s).
+".\Objects\lab3a_demo.axf" - 1 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -131,19 +115,19 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: ARM::CMSIS:RTOS:Keil RTX:4.82.0
+      Library file:  CMSIS/RTOS/RTX/LIB/ARM/RTX_CM3.lib
+      Include file:  CMSIS/RTOS/RTX/INC/cmsis_os.h
+      Include file:  CMSIS/RTOS/RTX/UserCodeTemplates/osObjects.h
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/main.c
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MailQueue.c
       Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MemPool.c
+      Source file:   CMSIS/RTOS/RTX/Templates/RTX_Conf_CM.c
       Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MsgQueue.c
       Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Mutex.c
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Semaphore.c
-      Source file:   CMSIS/RTOS/RTX/Templates/RTX_Conf_CM.c
-      Source file:   CMSIS/RTOS/RTX/SRC/ARM/SVC_Table.s
       Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Thread.c
-      Include file:  CMSIS/RTOS/RTX/INC/cmsis_os.h
-      Library file:  CMSIS/RTOS/RTX/LIB/ARM/RTX_CM3.lib
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MailQueue.c
-      Include file:  CMSIS/RTOS/RTX/UserCodeTemplates/osObjects.h
       Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Timer.c
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/main.c
+      Source file:   CMSIS/RTOS/RTX/SRC/ARM/SVC_Table.s
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Semaphore.c
 
    * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.5.1
       Source file:   Source/EventRecorder.c
@@ -160,9 +144,9 @@ Package Vendor: Keil
 
    * Component: Keil::Device:Startup:1.0.0
       Include file:  Device/Include/LPC17xx.h
-      Include file:  RTE_Driver/Config/RTE_Device.h
       Source file:   Device/Source/ARM/startup_LPC17xx.s
       Source file:   Device/Source/system_LPC17xx.c
+      Include file:  RTE_Driver/Config/RTE_Device.h
 Target not created.
 Build Time Elapsed:  00:00:01
 </pre>

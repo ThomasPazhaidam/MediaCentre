@@ -7,3 +7,5 @@
 .\objects\snake.o: .\RTE\_Target_1\RTE_Components.h
 .\objects\snake.o: GLCD.h
 .\objects\snake.o: KBD.h
+.\objects\snake.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\stdlib.h
+.\objects\snake.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\string.h

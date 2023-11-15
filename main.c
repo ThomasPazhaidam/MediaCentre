@@ -40,7 +40,7 @@
 *******************************************************************************/
 extern void LaunchMusicPlayer (void);
 extern void StartPhotoViewer (void);
-extern void InitializeSnakeGame();
+extern void InitializeSnakeGame(void);
 /******************************************************************************
 * Function Definitions
 *******************************************************************************/
