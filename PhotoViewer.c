@@ -9,9 +9,11 @@
 /******************************************************************************
 * Includes
 *******************************************************************************/
+/*
 #define osObjectsPublic                     // define objects in main module
 #include "osObjects.h"                      // RTOS object definitions
 #include "cmsis_os.h"                       // CMSIS RTOS header file
+*/
 #include <stdio.h>
 #include "RTE_Components.h"            		 // Component selection
 #include "GLCD.h"      
@@ -24,7 +26,8 @@
 /******************************************************************************
 * Module Preprocessor Constants
 *******************************************************************************/
-
+#define IMAGEX 115
+#define IMAGEY 50
 /******************************************************************************
 * Module Preprocessor Macros
 *******************************************************************************/
@@ -52,29 +55,33 @@ extern void Delay(int multiplier);
 *******************************************************************************/
 void DisplayImage (int PhotoIndex)
 {
+	GLCD_SetBackColor(Blue);
+	GLCD_SetTextColor(White);
 	switch(PhotoIndex)
 	{
 		case 0:
-			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<      Anos       >");
-			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)ANOS_pixel_data);
+			GLCD_DisplayString(9, 0, 1, (unsigned char*)"<       Anos       >");
+			GLCD_Bitmap(IMAGEX, IMAGEY, 100, 100, (unsigned char*)ANOS_pixel_data);
 			break;
 		case 1:
-			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<     Giorno     >");
-			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)GIORNO_pixel_data);
+			GLCD_DisplayString(9, 0, 1, (unsigned char*)"<      Giorno      >");
+			GLCD_Bitmap(IMAGEX, IMAGEY, 100, 100, (unsigned char*)GIORNO_pixel_data);
 			break;
 		case 2:
-			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<      Goku      >");
-			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)GIMP_IMAGE_pixel_data);
+			GLCD_DisplayString(9, 0, 1, (unsigned char*)"<       Goku       >");
+			GLCD_Bitmap(IMAGEX, IMAGEY, 100, 100, (unsigned char*)goku);
 			break;
 		case 3:
-			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<      Kaido      >");
-			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)KAIDO_pixel_data);
+			GLCD_DisplayString(9, 0, 1, (unsigned char*)"<       Kaido      >");
+			GLCD_Bitmap(IMAGEX, IMAGEY, 100, 100, (unsigned char*)kaido);
 			break;
 		case 4:
-			GLCD_DisplayString(6, 4, 1, (unsigned char*)"<      Saitama    >");
-			GLCD_Bitmap(0, 10, 100, 100, (unsigned char*)SAITAMA_pixel_data);
+			GLCD_DisplayString(9, 0, 1, (unsigned char*)"<     Saitama      >");
+			GLCD_Bitmap(IMAGEX, IMAGEY, 100, 100, (unsigned char*)SAITAMA_pixel_data);
 			break;
 	}
+	GLCD_SetBackColor(White);
+	GLCD_SetTextColor(Black);
 }
 /******************************************************************************
 * Photo viewer program
@@ -88,9 +95,8 @@ void StartPhotoViewer (void)
 	GLCD_SetBackColor(White);
 	GLCD_SetTextColor(Black);
 	
-	GLCD_DisplayString(0, 4, 1, (unsigned char*)"   Top 5 Anime Characters");
-	GLCD_DisplayString(5, 4, 1, (unsigned char*)"Push joystic to exit.");
-	GLCD_DisplayString(6, 4, 1, (unsigned char*)"<                   >");
+	GLCD_DisplayString(0, 0, 1, (unsigned char*)"       Gallery       ");
+	GLCD_DisplayString(8, 0, 1, (unsigned char*)"Push select to exit");
 	DisplayImage(photoIndex);
 	while(1)
 	{
@@ -98,12 +104,12 @@ void StartPhotoViewer (void)
 		
 		if(joystick == KBD_LEFT)
 		{
-			photoIndex == 4?(photoIndex = 0):(photoIndex++);
+			photoIndex == 0?(photoIndex = 4):(photoIndex--);
 			DisplayImage(photoIndex);
 		}
 		else if(joystick == KBD_RIGHT)
 		{
-			photoIndex == 0?(photoIndex = 4):(photoIndex--);
+			photoIndex == 4?(photoIndex = 0):(photoIndex++);
 			DisplayImage(photoIndex);
 		}
 		else if(joystick == KBD_SELECT)

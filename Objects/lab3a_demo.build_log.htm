@@ -3,152 +3,132 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.38.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Thomas P, Toronto Metropolitan University, LIC=----
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ECBME Dept. Ryerson University Flex license: MDK Professional 5.31 (Flex): 200 user(s) (mdk_pro) Operation stops: 21 Jun 2024
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.38.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCCv506u6\Bin
-C Compiler:      Armcc.exe V5.06 update 7 (build 960)
-Assembler:       Armasm.exe V5.06 update 7 (build 960)
-Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
-Library Manager: ArmAr.exe V5.06 update 7 (build 960)
-Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
-CPU DLL:         SARMCM3.DLL V5.38.0.0
-Dialog DLL:      DARMP1.DLL V1.28.1.0
-Target DLL:      UL2CM3.DLL V1.164.8.0
-Dialog DLL:      TARMP1.DLL V1.27.1.0
+Toolchain:       MDK Professional 5.31 (Flex): 200 user(s)  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMP1.DLL V1.27.0.0
+Target DLL:      UL2CM3.DLL V1.163.4.0
+Dialog DLL:      TARMP1.DLL V1.26.0.0
  
 <h2>Project:</h2>
-C:\Users\Thomas\Documents\COE718\MediaCentre\lab3a_demo.uvprojx
-Project File Date:  11/15/2023
+S:\Documents\COE718\MediaCentre-fixed\MediaCentre-bf-onsite\lab3a_demo.uvprojx
+Project File Date:  11/17/2023
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCCv506u6\Bin'
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
-compiling usbuser.c...
+compiling GLCD_SPI_LPC1700.c...
+compiling LED.c...
+compiling KBD.c...
+compiling main.c...
 compiling usbcore.c...
 compiling usbdesc.c...
-compiling anos.c...
-Images\anos.c(7): warning:  #177-D: variable "ANOS_pixel_data"  was declared but never referenced
-  static const unsigned char ANOS_pixel_data[100 * 100 * 2 + 1] =
-Images\anos.c: 1 warning, 0 errors
+compiling usbdmain.c...
+compiling usbhw.c...
+compiling usbuser.c...
+compiling adcuser.c...
 compiling nowplaying.c...
 USB Audio API\nowplaying.c(7): warning:  #177-D: variable "NOWPLAYING_pixel_data"  was declared but never referenced
   static const unsigned char NOWPLAYING_pixel_data[200 * 123 * 2 + 1] =
 USB Audio API\nowplaying.c: 1 warning, 0 errors
-compiling adcuser.c...
-compiling main.c...
 compiling PhotoViewer.c...
-compiling KBD.c...
-compiling usbdmain.c...
-compiling LED.c...
-compiling usbhw.c...
-compiling GLCD_SPI_LPC1700.c...
-compiling goku.c...
-Images\goku.c(7): warning:  #177-D: variable "GIMP_IMAGE_pixel_data"  was declared but never referenced
-  static const unsigned char GIMP_IMAGE_pixel_data[100 * 100 * 2 + 1] =
-Images\goku.c: 1 warning, 0 errors
-compiling kaido.c...
-Images\kaido.c(7): warning:  #177-D: variable "KAIDO_pixel_data"  was declared but never referenced
-  static const unsigned char KAIDO_pixel_data[100 * 99 * 2 + 1] =
-Images\kaido.c: 1 warning, 0 errors
+.\Images\kaido.c(6): warning:  #47-D: incompatible redefinition of macro "GIMP_IMAGE_PIXEL_DATA"  (declared at line 6 of ".\Images\goku.c")
+  #define GIMP_IMAGE_PIXEL_DATA ((unsigned char*) kaido)
+PhotoViewer.c: 1 warning, 0 errors
+compiling anos.c...
+Images\anos.c(7): warning:  #177-D: variable "ANOS_pixel_data"  was declared but never referenced
+  static const unsigned char ANOS_pixel_data[100 * 100 * 2 + 1] =
+Images\anos.c: 1 warning, 0 errors
 compiling giorno.c...
 Images\giorno.c(7): warning:  #177-D: variable "GIORNO_pixel_data"  was declared but never referenced
   static const unsigned char GIORNO_pixel_data[100 * 100 * 2 + 1] =
 Images\giorno.c: 1 warning, 0 errors
+compiling goku.c...
+Images\goku.c(7): warning:  #177-D: variable "goku"  was declared but never referenced
+  static const unsigned char goku[100 * 100 * 2 + 1] =
+Images\goku.c: 1 warning, 0 errors
+compiling kaido.c...
+Images\kaido.c(7): warning:  #177-D: variable "kaido"  was declared but never referenced
+  static const unsigned char kaido[100 * 100 * 2 + 1] =
+Images\kaido.c: 1 warning, 0 errors
 compiling saitama.c...
 Images\saitama.c(7): warning:  #177-D: variable "SAITAMA_pixel_data"  was declared but never referenced
   static const unsigned char SAITAMA_pixel_data[100 * 100 * 2 + 1] =
 Images\saitama.c: 1 warning, 0 errors
-compiling RTX_Conf_CM.c...
 compiling snake.c...
-assembling startup_LPC17xx.s...
-compiling GPIO_LPC17xx.c...
 compiling EventRecorder.c...
+compiling GPIO_LPC17xx.c...
 compiling PIN_LPC17xx.c...
+assembling startup_LPC17xx.s...
 compiling system_LPC17xx.c...
 linking...
-.\Objects\lab3a_demo.axf: error: L6047U: The size of this image (174804 bytes) exceeds the maximum allowed for this version of the linker
-Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
-".\Objects\lab3a_demo.axf" - 1 Error(s), 6 Warning(s).
+Program Size: Code=12768 RO-data=157860 RW-data=132 ZI-data=3240  
+".\Objects\lab3a_demo.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
-                ARM.CMSIS.5.9.0
-                CMSIS (Common Microcontroller Software Interface Standard)
-   * Component: RTOS Version: 1.0.0
-   * Component: CORE Version: 5.6.0
-   * Component: Keil RTX Version: 4.82.0
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
 
 Package Vendor: Keil
-                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.2.pack
-                Keil.ARM_Compiler.1.7.2
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.6.3.pack
+                Keil.ARM_Compiler.1.6.3
                 Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
-   * Component: Event Recorder Variant: DAP Version: 1.5.1
+   * Component: Event Recorder Variant: DAP Version: 1.4.0
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.LPC1700_DFP.2.7.1.pack
-                Keil.LPC1700_DFP.2.7.1
+                http://www.keil.com/pack/Keil.LPC1700_DFP.2.6.0.pack
+                Keil.LPC1700_DFP.2.6.0
                 NXP LPC1700 Series Device Support, Drivers and Examples for MCB1700 and LPC1788-32
    * Component: GPIO Version: 1.1.0
    * Component: PIN Version: 1.0.0
    * Component: Startup Version: 1.0.0
 
 <h2>Collection of Component include folders:</h2>
-  ./RTE/Compiler
-  ./RTE/Device/LPC1768
-  ./RTE/_Target_1
-  C:/Users/Thomas/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
-  C:/Users/Thomas/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS/RTX/INC
-  C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include
-  C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.7.1/Device/Include
-  C:/Users/Thomas/AppData/Local/Arm/Packs/Keil/LPC1700_DFP/2.7.1/RTE_Driver
+  .\RTE\Compiler
+  .\RTE\Device\LPC1768
+  .\RTE\_Target_1
+  C:\Users\ECBME\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\ECBME\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include
+  C:\Users\ECBME\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include
+  C:\Users\ECBME\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\RTE_Driver
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ::CMSIS:RTOS:1.0.0 (API)
+   * Component: ARM::CMSIS:CORE:5.4.0
 
-   * Component: ARM::CMSIS:CORE:5.6.0
-
-   * Component: ARM::CMSIS:RTOS:Keil RTX:4.82.0
-      Library file:  CMSIS/RTOS/RTX/LIB/ARM/RTX_CM3.lib
-      Include file:  CMSIS/RTOS/RTX/INC/cmsis_os.h
-      Include file:  CMSIS/RTOS/RTX/UserCodeTemplates/osObjects.h
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/main.c
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MailQueue.c
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MemPool.c
-      Source file:   CMSIS/RTOS/RTX/Templates/RTX_Conf_CM.c
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MsgQueue.c
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Mutex.c
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Thread.c
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Timer.c
-      Source file:   CMSIS/RTOS/RTX/SRC/ARM/SVC_Table.s
-      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Semaphore.c
-
-   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.5.1
-      Source file:   Source/EventRecorder.c
-      Include file:  Include/EventRecorder.h
-      Include file:  Config/EventRecorderConf.h
+   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0
+      Include file:  Config\EventRecorderConf.h
+      Include file:  Include\EventRecorder.h
+      Source file:   Source\EventRecorder.c
 
    * Component: Keil::Device:GPIO:1.1.0
-      Include file:  RTE_Driver/GPIO_LPC17xx.h
-      Source file:   RTE_Driver/GPIO_LPC17xx.c
+      Include file:  RTE_Driver\GPIO_LPC17xx.h
+      Source file:   RTE_Driver\GPIO_LPC17xx.c
 
    * Component: Keil::Device:PIN:1.0.0
-      Source file:   RTE_Driver/PIN_LPC17xx.c
-      Include file:  RTE_Driver/PIN_LPC17xx.h
+      Include file:  RTE_Driver\PIN_LPC17xx.h
+      Source file:   RTE_Driver\PIN_LPC17xx.c
 
    * Component: Keil::Device:Startup:1.0.0
-      Include file:  Device/Include/LPC17xx.h
-      Source file:   Device/Source/ARM/startup_LPC17xx.s
-      Source file:   Device/Source/system_LPC17xx.c
-      Include file:  RTE_Driver/Config/RTE_Device.h
-Target not created.
-Build Time Elapsed:  00:00:01
+      Source file:   Device\Source\system_LPC17xx.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Include file:  Device\Include\LPC17xx.h
+      Source file:   Device\Source\ARM\startup_LPC17xx.s
+Build Time Elapsed:  00:00:08
 </pre>
 </body>
 </html>

@@ -17,8 +17,6 @@
 ".\objects\kaido.o"
 ".\objects\saitama.o"
 ".\objects\snake.o"
-"..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM3.lib"
-".\objects\rtx_conf_cm.o"
 ".\objects\eventrecorder.o"
 ".\objects\gpio_lpc17xx.o"
 ".\objects\pin_lpc17xx.o"

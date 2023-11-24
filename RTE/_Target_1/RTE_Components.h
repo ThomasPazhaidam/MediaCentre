@@ -16,9 +16,6 @@
  */
 #define CMSIS_device_header "LPC17xx.h"
 
-/* ARM::CMSIS:RTOS:Keil RTX:4.82.0 */
-#define RTE_CMSIS_RTOS                  /* CMSIS-RTOS */
-        #define RTE_CMSIS_RTOS_RTX              /* CMSIS-RTOS Keil RTX */
 /* Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.5.1 */
 #define RTE_Compiler_EventRecorder
           #define RTE_Compiler_EventRecorder_DAP

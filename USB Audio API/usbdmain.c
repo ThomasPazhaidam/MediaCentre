@@ -46,8 +46,8 @@ uint8_t   DataRun;                              /* Data Stream Run State */
 uint16_t  PotVal;                               /* Potenciometer Value */
 uint32_t  VUM;                                  /* VU Meter */
 uint32_t  Tick;                                 /* Time Tick */
-
-
+int glbExit = 0;
+int glbFirstRun = 0;
 /*
  * Get Potenciometer Value
  */
@@ -74,7 +74,8 @@ void TIMER0_IRQHandler(void)
 {
   long  val;
   uint32_t cnt;
-
+	int joystickVal = 0;
+	volatile uint32_t pclk = SystemFrequency;
   if (DataRun) {                            /* Data Stream is running */
     val = DataBuf[DataOut];                 /* Get Audio Sample */
     cnt = (DataIn - DataOut) & (B_S - 1);   /* Buffer Data Count */
@@ -114,6 +115,30 @@ void TIMER0_IRQHandler(void)
   }
 	
   LPC_TIM0->IR = 1;                         /* Clear Interrupt Flag */
+	if(glbFirstRun)
+	{
+		GLCD_Clear(Black);
+		GLCD_SetBackColor(Black);
+		GLCD_SetTextColor(White);
+		GLCD_DisplayString(0, 4, 1, (unsigned char*)"Music Player");
+		GLCD_DisplayString(1, 0, 1, (unsigned char*)"Push select to exit.");
+		GLCD_Bitmap(60, 70, 200, 123, (unsigned char*)NOWPLAYING_pixel_data);
+		glbFirstRun = 0;
+	}
+	joystickVal = get_button();
+	if(joystickVal == KBD_SELECT)
+	{
+		USB_Connect(FALSE);
+		SystemClockUpdate();
+		NVIC_DisableIRQ(TIMER0_IRQn);
+		NVIC_DisableIRQ(USB_IRQn);
+		
+		LPC_TIM0->MR0 = pclk/DATA_FREQ - 1;	/* TC0 Match Value 0 */
+		LPC_TIM0->MCR = 3;					/* TCO Interrupt and Reset on MR0 */
+		LPC_TIM0->TCR = 0;					/* TC0 Enable */	
+		USB_Reset();
+		glbExit = 1;
+	}
 }
 
 
@@ -124,11 +149,8 @@ void TIMER0_IRQHandler(void)
 void LaunchMusicPlayer (void)
 {
   volatile uint32_t pclkdiv, pclk;
-	GLCD_Clear(Blue);
-	GLCD_SetTextColor(White);
-	GLCD_DisplayString(0, 4, 1, (unsigned char*)"Music Player");
-	GLCD_DisplayString(1, 4, 1, (unsigned char*)"Push joystic to exit.");
-	
+	glbExit = 0;
+	glbFirstRun = 1;
   /* SystemClockUpdate() updates the SystemFrequency variable */
   SystemClockUpdate();
 
@@ -167,21 +189,12 @@ void LaunchMusicPlayer (void)
   LPC_TIM0->MCR = 3;					/* TCO Interrupt and Reset on MR0 */
   LPC_TIM0->TCR = 1;					/* TC0 Enable */
   NVIC_EnableIRQ(TIMER0_IRQn);
-
+	
   USB_Init();				/* USB Initialization */
   USB_Connect(TRUE);		/* USB Connect */
-	GLCD_Bitmap(0, 10, 200, 123, (unsigned char*)NOWPLAYING_pixel_data);
-  while( 1 )
-	{
-		int joystickVal = 0;
-		joystickVal = get_button();
-		if(joystickVal == KBD_SELECT)
-		{
-			USB_Connect(FALSE);
-			NVIC_DisableIRQ(TIMER0_IRQn);
-			break;
-		}
-	}
+	
+  while( !glbExit );
+	return;
 }
 
 /******************************************************************************

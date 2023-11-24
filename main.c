@@ -9,9 +9,11 @@
 /******************************************************************************
 * Includes
 *******************************************************************************/
+/*
 #define osObjectsPublic                     // define objects in main module
 #include "osObjects.h"                      // RTOS object definitions
 #include "cmsis_os.h"                       // CMSIS RTOS header file
+*/
 #include <stdio.h>
 #include "RTE_Components.h"            		 // Component selection
 #include "GLCD.h"      
@@ -107,7 +109,7 @@ int UpdateItemSelection(int ItemIndex, int JoystickVal, int MaxIndex)
 void UpdateGlcdItemSelection(int ItemIndex) 
 {
 	
-	unsigned char itemNames[3][256] = {"Top 5 Anime Characters", "Music Player", "The Woods"};
+	unsigned char itemNames[3][256] = {"Gallery", "Music Player", "Snake"};
 	int i = 0;
 	
 	GLCD_SetBackColor(White);
@@ -149,7 +151,7 @@ void OpenSelectedItem(int ItemIndex)
 	GLCD_Clear(White);
 	GLCD_SetBackColor(White);
 	GLCD_SetTextColor(Black);
-	GLCD_DisplayString(0, 4, 1, (unsigned char*)"Main Menu");
+	GLCD_DisplayString(0, 4, 1, (unsigned char*)"  Main Menu");
 }
 /******************************************************************************
 * main.c

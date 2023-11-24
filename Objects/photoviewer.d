@@ -1,12 +1,9 @@
 .\objects\photoviewer.o: PhotoViewer.c
-.\objects\photoviewer.o: osObjects.h
-.\objects\photoviewer.o: C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC\cmsis_os.h
-.\objects\photoviewer.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\stdint.h
-.\objects\photoviewer.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\stddef.h
-.\objects\photoviewer.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\stdio.h
+.\objects\photoviewer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\photoviewer.o: .\RTE\_Target_1\RTE_Components.h
 .\objects\photoviewer.o: GLCD.h
 .\objects\photoviewer.o: KBD.h
+.\objects\photoviewer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\photoviewer.o: .\Images\giorno.c
 .\objects\photoviewer.o: .\Images\anos.c
 .\objects\photoviewer.o: .\Images\goku.c

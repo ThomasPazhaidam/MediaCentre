@@ -1,9 +1,6 @@
 .\objects\main.o: main.c
-.\objects\main.o: osObjects.h
-.\objects\main.o: C:\Users\Thomas\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS\RTX\INC\cmsis_os.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\stdint.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\stddef.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCCv506u6\Bin\..\include\stdio.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\RTE\_Target_1\RTE_Components.h
 .\objects\main.o: GLCD.h
 .\objects\main.o: KBD.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

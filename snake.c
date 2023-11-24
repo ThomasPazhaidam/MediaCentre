@@ -9,9 +9,11 @@
 /******************************************************************************
 * Includes
 *******************************************************************************/
+/*
 #define osObjectsPublic                     // define objects in main module
 #include "osObjects.h"                      // RTOS object definitions
 #include "cmsis_os.h"                       // CMSIS RTOS header file
+*/
 #include <stdio.h>
 #include "RTE_Components.h"            		 // Component selection
 #include "GLCD.h"      
@@ -64,7 +66,7 @@ extern int UpdateItemSelection(int ItemIndex, int JoystickVal, int MaxIndex);
 void UpdateDifficultyGlcdSelection(int ItemIndex) 
 {
 	
-	unsigned char itemNames[4][256] = {"       EASY         ", "       MEDIUM       ", "       HARD         ", "        RETURN       "};
+	unsigned char itemNames[4][256] = {"       EASY         ", "       MEDIUM       ", "       HARD         ", "       RETURN        "};
 	int i = 0;
 	
 	GLCD_SetBackColor(White);
@@ -99,7 +101,7 @@ void LcdDelay (int count){
 void GenerateFood()
 {
 	glbFoodx = (rand()%8)+1;
-	glbFoody = (rand()&19);
+	glbFoody = (rand()%20)+1;
 	
 	GLCD_SetTextColor(Red);
 	GLCD_DisplayChar(glbFoodx, glbFoody, 1, 0x81); 
@@ -112,6 +114,15 @@ void GenerateFood()
 void UpdateSnakeDirection(int JoystickPos)
 {
 	int i = 0;
+	int positionUpdated = 0;
+	GLCD_SetTextColor(DarkGreen);
+	GLCD_DisplayChar(glbSnake[0].xPos,glbSnake[0].yPos,1,' ');
+	for(i = glbSnakeLen-1; i>0; --i)
+	{
+		GLCD_DisplayChar(glbSnake[i].xPos,glbSnake[i].yPos,1,' ');
+		glbSnake[i].xPos = glbSnake[i-1].xPos;
+		glbSnake[i].yPos = glbSnake[i-1].yPos;
+	}
 	
 	switch(JoystickPos)
 	{
@@ -119,38 +130,51 @@ void UpdateSnakeDirection(int JoystickPos)
 			if(glbPrevJoystickVal == KBD_LEFT || glbPrevJoystickVal == KBD_RIGHT)
 			{
 				glbSnake[0].xPos--;
+				positionUpdated = 1;
 			}
+			else
+				goto DFLT;
 			break;
 		case KBD_RIGHT:
 			if(glbPrevJoystickVal == KBD_UP || glbPrevJoystickVal == KBD_DOWN)
 			{
 				glbSnake[0].yPos++;
+				positionUpdated = 1;
 			}
+			else
+				goto DFLT;
 			break;		
 		case KBD_LEFT:
 			if(glbPrevJoystickVal == KBD_UP || glbPrevJoystickVal == KBD_DOWN)
 			{
 				glbSnake[0].yPos--;
+				positionUpdated = 1;
 			}
+			else
+				goto DFLT;
 			break;		
 		case KBD_DOWN:
 			if(glbPrevJoystickVal == KBD_LEFT || glbPrevJoystickVal == KBD_RIGHT)
 			{
 				glbSnake[0].xPos++;
+				positionUpdated = 1;
 			}
+			else
+				goto DFLT;
 			break;			
 		default:
+			DFLT:
 			switch(glbPrevJoystickVal)
 			{
 				case KBD_UP:
 					glbSnake[0].xPos--;
-					if(glbSnake[0].xPos <0)
+					if(glbSnake[0].xPos <1)
 						glbSnake[0].xPos = 9;
 					break;
 				case KBD_DOWN:
 					glbSnake[0].xPos++;
 					if(glbSnake[0].xPos >9)
-						glbSnake[0].xPos = 0;
+						glbSnake[0].xPos = 1;
 					break;
 				case KBD_RIGHT:
 					glbSnake[0].yPos++;
@@ -159,23 +183,17 @@ void UpdateSnakeDirection(int JoystickPos)
 					break;
 				case KBD_LEFT:
 					glbSnake[0].yPos--;
-					if(glbSnake[0].yPos < 0)
+					if(glbSnake[0].yPos < 1)
 						glbSnake[0].yPos = 20;
 					break;
 			}
 			break;
 	}
-	if(JoystickPos == KBD_UP || JoystickPos == KBD_RIGHT || JoystickPos == KBD_LEFT ||JoystickPos == KBD_DOWN)
+	if((JoystickPos == KBD_UP || JoystickPos == KBD_RIGHT || JoystickPos == KBD_LEFT ||JoystickPos == KBD_DOWN)&&positionUpdated)
 	{
 		glbPrevJoystickVal = JoystickPos;
 	}
 	
-	for(i = glbSnakeLen-1; i>0; --i)
-	{
-		GLCD_DisplayChar(glbSnake[i].xPos,glbSnake[i].xPos,1,' ');
-		glbSnake[i].xPos = glbSnake[i-1].xPos;
-		glbSnake[i].yPos = glbSnake[i-1].yPos;
-	}
 	GLCD_DisplayChar(glbSnake[0].xPos,glbSnake[0].yPos,1,0x89);
 	for(i=1; i<glbSnakeLen; ++i)
 	{
@@ -189,11 +207,17 @@ void UpdateSnakeDirection(int JoystickPos)
 int UpdateState()
 {
 	int i = 0;
-	if(glbFoodx == glbSnake[0].xPos && glbFoodx == glbSnake[0].yPos)
+	char scoreStr[10] = {0};
+	if(glbFoodx == glbSnake[0].xPos && glbFoody == glbSnake[0].yPos)
 	{
 		glbSnakeLen++;
 		glbScore++;
 		GenerateFood();
+		GLCD_SetBackColor(Blue);
+		GLCD_SetTextColor(White);
+		sprintf(scoreStr, "%d", glbScore);
+		GLCD_DisplayString(0, 10, 1, (unsigned char*)scoreStr);
+		GLCD_SetBackColor(White);
 	}
 	
 	for(i=1;i<glbSnakeLen;i++){
@@ -258,7 +282,7 @@ void InitializeSnakeGame()
 		glbSnake[i].xPos = 4-i;
 		glbSnake[i].yPos = 9;
 	}
-	
+	GLCD_Clear(White);
 	GenerateFood();
 	while(!gameOver)
 	{
