@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Objects\lab3a_demo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\lab3a_demo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Nov 17 12:16:43 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Dec 01 11:09:46 2023
 <BR><P>
-<H3>Maximum Stack Usage =       1232 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =       1248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; OpenSelectedItem &rArr; InitializeSnakeGame &rArr;  InitializeSnakeGame (Cycle)
 <P>
@@ -139,7 +139,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[45]"></a>Delay</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPhotoViewer
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GenerateFood
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPhotoViewer
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeSnakeGame
 <LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -162,7 +164,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[40]"></a>OpenSelectedItem</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1232<LI>Call Chain = OpenSelectedItem &rArr; InitializeSnakeGame &rArr;  InitializeSnakeGame (Cycle)
+<BR><BR>[Stack]<UL><LI>Max Depth = 1248<LI>Call Chain = OpenSelectedItem &rArr; InitializeSnakeGame &rArr;  InitializeSnakeGame (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPhotoViewer
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LaunchMusicPlayer
@@ -176,7 +178,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[2d]"></a>main</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1232<LI>Call Chain = main &rArr; OpenSelectedItem &rArr; InitializeSnakeGame &rArr;  InitializeSnakeGame (Cycle)
+<BR><BR>[Stack]<UL><LI>Max Depth = 1248<LI>Call Chain = main &rArr; OpenSelectedItem &rArr; InitializeSnakeGame &rArr;  InitializeSnakeGame (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OpenSelectedItem
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateGlcdItemSelection
@@ -460,7 +462,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DrawChar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateSnakeDirection
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateState
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateSnakeDirection
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GenerateFood
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DisplayString
 </UL>
@@ -973,10 +976,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeSnakeGame
 </UL>
 
-<P><STRONG><a name="[8f]"></a>GenerateFood</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, snake.o(.text))
+<P><STRONG><a name="[8f]"></a>GenerateFood</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, snake.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = GenerateFood &rArr; GLCD_DisplayChar &rArr; GLCD_DrawChar &rArr; GLCD_SetWindow &rArr; wr_reg &rArr; wr_dat
 </UL>
-<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DisplayChar
+<BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DisplayChar
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetTextColor
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
 </UL>
@@ -993,11 +997,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeSnakeGame
 </UL>
 
-<P><STRONG><a name="[92]"></a>UpdateState</STRONG> (Thumb, 158 bytes, Stack size 24 bytes, snake.o(.text))
+<P><STRONG><a name="[92]"></a>UpdateState</STRONG> (Thumb, 210 bytes, Stack size 24 bytes, snake.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = UpdateState &rArr; GLCD_DisplayString &rArr; GLCD_DisplayChar &rArr; GLCD_DrawChar &rArr; GLCD_SetWindow &rArr; wr_reg &rArr; wr_dat
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GenerateFood
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DisplayString
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DisplayChar
 <LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetBackColor
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetTextColor
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
@@ -1005,8 +1010,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeSnakeGame
 </UL>
 
-<P><STRONG><a name="[43]"></a>InitializeSnakeGame</STRONG> (Thumb, 322 bytes, Stack size 24 bytes, snake.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1224 + In Cycle
+<P><STRONG><a name="[43]"></a>InitializeSnakeGame</STRONG> (Thumb, 426 bytes, Stack size 40 bytes, snake.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1240 + In Cycle
 <LI>Call Chain = InitializeSnakeGame &rArr;  InitializeSnakeGame (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateState
@@ -1016,11 +1021,13 @@ Global Symbols
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateDifficultyGlcdSelection
 <LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeSnakeGame
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateItemSelection
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
 <LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_button
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DisplayString
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Clear
 <LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetBackColor
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetTextColor
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeSnakeGame
@@ -1152,6 +1159,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateState
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeSnakeGame
 </UL>
 
 <P><STRONG><a name="[c3]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)

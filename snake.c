@@ -48,7 +48,7 @@ struct SnakeProp
 struct SnakeProp glbSnake[100];
 
 int glbSnakeLen = 0;
-
+int glbTimerCount = 0;
 int glbPrevJoystickVal = 0;
 /******************************************************************************
 * Function Prototypes
@@ -57,6 +57,7 @@ int glbPrevJoystickVal = 0;
 * Function Externs
 *******************************************************************************/
 extern int UpdateItemSelection(int ItemIndex, int JoystickVal, int MaxIndex);
+extern void Delay(int multiplier);
 /******************************************************************************
 * Function Definitions
 *******************************************************************************/
@@ -101,8 +102,8 @@ void LcdDelay (int count){
 void GenerateFood()
 {
 	glbFoodx = (rand()%8)+1;
-	glbFoody = (rand()%20)+1;
-	
+	glbFoody = (rand()%18)+1;
+	Delay(20000);
 	GLCD_SetTextColor(Red);
 	GLCD_DisplayChar(glbFoodx, glbFoody, 1, 0x81); 
 }
@@ -178,8 +179,8 @@ void UpdateSnakeDirection(int JoystickPos)
 					break;
 				case KBD_RIGHT:
 					glbSnake[0].yPos++;
-					if(glbSnake[0].yPos >20)
-						glbSnake[0].yPos = 0;
+					if(glbSnake[0].yPos >19)
+						glbSnake[0].yPos = 2;
 					break;
 				case KBD_LEFT:
 					glbSnake[0].yPos--;
@@ -208,6 +209,7 @@ int UpdateState()
 {
 	int i = 0;
 	char scoreStr[10] = {0};
+	glbTimerCount++;
 	if(glbFoodx == glbSnake[0].xPos && glbFoody == glbSnake[0].yPos)
 	{
 		glbSnakeLen++;
@@ -218,6 +220,16 @@ int UpdateState()
 		sprintf(scoreStr, "%d", glbScore);
 		GLCD_DisplayString(0, 10, 1, (unsigned char*)scoreStr);
 		GLCD_SetBackColor(White);
+		glbTimerCount = 0;
+	}
+	else
+	{
+		if(glbTimerCount == 25)
+		{
+			GLCD_DisplayChar(glbFoodx, glbFoody, 1, 32); 
+			GenerateFood();
+			glbTimerCount = 0;
+		}
 	}
 	
 	for(i=1;i<glbSnakeLen;i++){
@@ -237,6 +249,7 @@ void InitializeSnakeGame()
 	int joystick = 0;
 	int menuIndex = 0;
 	int gameOver = 0;
+	char scoreStr[10] = {0};
 	glbPrevJoystickVal = KBD_LEFT;
 	
 	
@@ -283,6 +296,11 @@ void InitializeSnakeGame()
 		glbSnake[i].yPos = 9;
 	}
 	GLCD_Clear(White);
+	GLCD_SetBackColor(Blue);
+	GLCD_SetTextColor(White);
+	GLCD_DisplayString(0, 10, 1, (unsigned char*)"0");
+	GLCD_SetBackColor(White);
+	GLCD_SetTextColor(Black);
 	GenerateFood();
 	while(!gameOver)
 	{
@@ -290,10 +308,17 @@ void InitializeSnakeGame()
 		UpdateSnakeDirection(joystick);
 		LcdDelay(speed);
 		gameOver = UpdateState();
+		if(joystick == KBD_SELECT)
+		{
+			gameOver=1;
+		}
 	}
 
 	GLCD_Clear(White);
+	sprintf(scoreStr, "%d", glbScore);
+	GLCD_DisplayString(4, 6, 1, (unsigned char*)"Game Over");
+	GLCD_DisplayString(6, 10, 1, (unsigned char*)scoreStr);
 	GLCD_SetBackColor(White);
-
+	Delay(20000);
 	InitializeSnakeGame();
 }
